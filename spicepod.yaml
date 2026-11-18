@@ -1,3 +1,10 @@
 name: my-spicepod
 kind: Spicepod
 version: v1
+
+datasets:
+  - name: tpch.customer
+    description: TPC-H benchmark customer dataset.
+    from: s3://spiceai-demo-datasets/tpch/customer/
+    params:
+      file_format: parquet
